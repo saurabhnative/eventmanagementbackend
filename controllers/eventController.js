@@ -1,4 +1,4 @@
-const Event = require('../models/Event');
+const Event = require('../models/event');
 
 // Controller method for creating a new event
 exports.createEvent = async (req, res) => {
