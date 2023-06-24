@@ -25,6 +25,10 @@ const eventSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  imageURL: {
+    type: String,
+    required: true,
+  },
   organizers: [
     {
       type: mongoose.Schema.Types.ObjectId,

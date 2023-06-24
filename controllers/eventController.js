@@ -40,7 +40,7 @@ exports.updateEventById = async (req, res) => {
   try {
     const event = await Event.findByIdAndUpdate(
       req.params.id,
-      { $set: req.body },
+      { $set: req.body.updatedData },
       { new: true }
     );
     if (!event) {
