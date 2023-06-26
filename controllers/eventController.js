@@ -15,7 +15,6 @@ exports.createEvent = async (req, res) => {
 exports.getAllEvents = async (req, res) => {
   try {
     const events = await Event.find().populate('organizers', 'username email');
-    console.log('events', events);
     res.json(events);
   } catch (err) {
     res.status(500).json({ error: err.message });
